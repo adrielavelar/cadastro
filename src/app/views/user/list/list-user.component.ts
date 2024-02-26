@@ -1,6 +1,8 @@
 import { DecimalPipe } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { FormsModule } from "@angular/forms";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 import axios from "axios";
 
 interface User {
@@ -13,13 +15,14 @@ interface User {
 @Component({
     selector: 'app-list-user',
     standalone: true,
-    imports: [DecimalPipe, FormsModule],
+    imports: [DecimalPipe, FormsModule, FontAwesomeModule],
     templateUrl: './list-user.component.html',
     styleUrl: './list-user.component.css'
 })
 
 export class ListUserComponent implements OnInit {
-
+    faPen = faPen;
+    faTrash = faTrash;
     users: User[] = [];
     allUsers: User[] = [];
 

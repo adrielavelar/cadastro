@@ -27,7 +27,20 @@
                         </td>
                         <td>{{ user.email }}</td>
                         <td>{{ user.cpf}}</td>
-                        <td><i class="fas fa-band-aid"></i></td>
+                        <td>
+                            <div class="form-group">
+                                <a href="">
+                                    <i>
+                                        <fa-icon [icon]="faPen"></fa-icon>
+                                    </i>
+                                </a>
+                                <a href="">
+                                    <i>
+                                        <fa-icon [icon]="faTrash"></fa-icon>
+                                    </i>
+                                </a>
+                            </div>
+                        </td>
                     </tr>
                     }
                 </tbody>
