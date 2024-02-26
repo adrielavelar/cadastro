@@ -12,8 +12,8 @@
         </div>
         <div class="desktop_menu" [class.mobile_menu]="menuValue">
           <ul>
-            <li (click)="closeMenu()">Lista</li>
-            <li (click)="closeMenu()">Cadastro</li>
+            <li (click)="closeMenu()" routerLink="/user/list">Lista</li>
+            <li (click)="closeMenu()" routerLink="/user/create">Cadastro</li>
           </ul>
         </div>
       </div>
