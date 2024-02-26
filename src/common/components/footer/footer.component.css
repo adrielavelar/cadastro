@@ -1,0 +1,12 @@
+footer {
+  padding: 10px;
+  background: #060450;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+h5 {
+  color: whitesmoke;
+}
